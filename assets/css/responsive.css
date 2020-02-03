@@ -1,0 +1,62 @@
+/*  ___   ___      _______.    _______   _______  _______    ___      __    __   __      .___________.
+    \  \ /  /     /       |   |       \ |   ____||   ____|  /   \    |  |  |  | |  |     |           |
+     \  V  /     |   (----`   |  .--.  ||  |__   |  |__    /  ^  \   |  |  |  | |  |     `---|  |----`
+      >   <       \   \       |  |  |  ||   __|  |   __|  /  /_\  \  |  |  |  | |  |         |  |     
+     /  .  \  .----)   |      |  '--'  ||  |____ |  |    /  _____  \ |  `--'  | |  `----.    |  |     
+    /__/ \__\ |_______/       |_______/ |_______||__|   /__/     \__\ \______/  |_______|    |__|     
+*/
+  /* Extra small devices (portrait phones, less than 576px)
+ No media query since this is the default in Bootstrap */
+ 
+/*    _______..___  ___. 
+     /       ||   \/   | 
+    |   (----`|  \  /  | 
+     \   \    |  |\/|  | 
+ .----)   |   |  |  |  | 
+ |_______/    |__|  |__| 
+ */
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+ }
+/*___  ___.  _______  
+ |   \/   | |       \ 
+ |  \  /  | |  .--.  |
+ |  |\/|  | |  |  |  |
+ |  |  |  | |  '--'  |
+ |__|  |__| |_______/ 
+*/
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+    .navbar  {
+        position: fixed;
+        top: 0;
+        right: auto;
+        left: 0;
+        z-index: 1030;
+    }
+
+ }
+/*__        _______ 
+ |  |      /  _____|
+ |  |     |  |  __  
+ |  |     |  | |_ | 
+ |  `----.|  |__| | 
+ |_______| \______| 
+*/
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+ }
+/*  ___   ___  __      
+    \  \ /  / |  |     
+     \  V  /  |  |     
+      >   <   |  |     
+     /  .  \  |  `----.
+    /__/ \__\ |_______|
+*/
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+ }

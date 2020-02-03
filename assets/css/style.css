@@ -1,0 +1,136 @@
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+  }
+  
+  
+  .test {
+    border: 1px solid red;
+    background: blue;
+    z-index: 9999;
+  }
+
+
+ #cover-text, #cover-text h2 {
+    color: #ffffff;
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    top:220px;
+    left: 120px;
+
+    position: absolute;
+
+}
+
+
+/* imported from whisky */
+
+/* Jumbotron */
+
+.jumbotron {
+  background-color: transparent;
+}
+
+.jumbotron h1 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.jumbotron .lead {
+  color: #a7a7a7;
+  margin: 25px 0;
+}
+
+.jumbotron small {
+  font-size: 60%;
+  font-style: italic;
+  color: #d0d0d0;
+}
+
+.callout-container {
+  height: 100vh;
+
+  background: url('../img/whiskey-background.jpg') no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.opaque-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-container {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+/*------------------Footer*/
+
+footer {
+  background-color: #525252;
+  color: #fafafa;
+  min-height: 70px;
+  margin: 0;
+}
+
+
+
+.social-links {
+  padding-bottom: 10px;
+
+}
+
+.social-links li a i {
+  width: 32px;
+  height: 32px;
+  padding: 12px 0;
+  border-radius: 50%;
+  font-size: 13px;
+  line-height: 7px;
+  text-align: center;
+  color: #fafafa;
+  background: #8f8f8f;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+  background: #e84610 ;
+}
+
+#footer-details {
+  padding: 20px 20px 0px 20px;
+}
+
