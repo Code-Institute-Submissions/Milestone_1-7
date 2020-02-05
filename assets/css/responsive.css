@@ -30,12 +30,13 @@
 @media (min-width: 768px) { 
     
     .navbar  {
-        position: fixed;
+        /* position: fixed;
         top: 0;
         right: auto;
         left: 0;
-        z-index: 1030;
-    }
+        z-index: 1030; */
+        width: 34%;
+    } 
 
  }
 /*__        _______ 

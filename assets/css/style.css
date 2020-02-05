@@ -1,3 +1,106 @@
+/* main styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #818181;
+    line-height: 22px;
+}
+
+section {
+  background-color: #000;
+
+}
+
+h2 {
+  margin-left: 10px;
+  margin-top: 15%;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  line-height: 45px;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  color: #818181;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 50px 0 10px;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  color: #818181;
+  text-transform: uppercase;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #818181;
+  text-decoration: none;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* menu */
+
+nav li a {
+    
+    padding: 0px;
+    margin: 0 30px;
+    border-bottom: 1px solid rgba(235,235,235,0.2);
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #818181;
+    text-transform: uppercase;
+}
+
+ul.navbar-nav li:last-child a {
+  border-bottom: none;
+}
+
+
+/* about */
+
+.about-con ul {
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+}
+.about-con ul li:first-child {
+  padding: 0 0 12px 0;
+}
+.about-con ul li {
+  border-bottom: 1px solid rgba(235, 235, 235, 0.2);
+  padding: 12px 0;
+}
+
+.about-con ul li address {
+  margin-bottom: 0;
+}
+
+
+/* form */
+.form-control {
+  background-color: transparent;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  color: #2c2c2c;
+  line-height: normal;
+  font-size: 0.8571em;
+  -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 .container {
     width: auto;
     max-width: 680px;
@@ -7,8 +110,10 @@
   
   .test {
     border: 1px solid red;
-    background: blue;
-    z-index: 9999;
+    /* background: blue;
+    z-index: 9999; */
+    margin-left: 200px;
+    background-color: transparent;
   }
 
 
@@ -38,19 +143,34 @@
 }
 
 
-/* imported from whisky */
-
 /* Jumbotron */
 
 .jumbotron {
   background-color: transparent;
+  height: 100vh;
 }
 
 .jumbotron h1 {
-  color: white;
+  color: black;
   font-weight: bold;
   margin-bottom: 30px;
-  color: white;
+  margin-top: 40vh;
+  
+  /* Outline */
+  text-shadow: rgb(255, 255, 255) 2px 0px 0px, 
+  rgb(255, 255, 255) 1.75517px 0.958851px 0px, 
+  rgb(255, 255, 255) 1.0806px 1.68294px 0px, 
+  rgb(255, 255, 255) 0.141474px 1.99499px 0px,
+  rgb(255, 255, 255) -0.832294px 1.81859px 0px,
+  rgb(255, 255, 255) -1.60229px 1.19694px 0px,
+  rgb(255, 255, 255) -1.97998px 0.28224px 0px, 
+  rgb(255, 255, 255) -1.87291px -0.701566px 0px,
+  rgb(255, 255, 255) -1.30729px -1.5136px 0px, 
+  rgb(255, 255, 255) -0.421592px -1.95506px 0px,
+  rgb(255, 255, 255) 0.567324px -1.91785px 0px, 
+  rgb(255, 255, 255) 1.41734px -1.41108px 0px, 
+  rgb(255, 255, 255) 1.92034px -0.558831px 0px;
+   
 }
 
 .jumbotron .lead {
@@ -66,19 +186,19 @@
 
 .callout-container {
   height: 100vh;
-
   background: url('../img/web-development-framework.jpg') no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: center;
-
   position: relative;
 }
+
+
+
 
 .opaque-overlay {
   position: absolute;
@@ -94,6 +214,9 @@
   padding-bottom: 75px;
 }
 
+.inner {
+  padding: 20px;
+}
 /*------------------Footer*/
 
 footer {
