@@ -48,7 +48,9 @@
 */
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    
+    .navbar  {
+height: 100vh;
+    }
  }
 /*  ___   ___  __      
     \  \ /  / |  |     
