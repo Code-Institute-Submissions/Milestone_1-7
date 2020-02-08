@@ -1,3 +1,28 @@
+/*
+ 
+      _______.  ______ .______       _______  _______ .__   __.      ______   .______       __   _______ .__   __. .___________.    ___   .___________. __    ______   .__   __. 
+     /       | /      ||   _  \     |   ____||   ____||  \ |  |     /  __  \  |   _  \     |  | |   ____||  \ |  | |           |   /   \  |           ||  |  /  __  \  |  \ |  | 
+    |   (----`|  ,----'|  |_)  |    |  |__   |  |__   |   \|  |    |  |  |  | |  |_)  |    |  | |  |__   |   \|  | `---|  |----`  /  ^  \ `---|  |----`|  | |  |  |  | |   \|  | 
+     \   \    |  |     |      /     |   __|  |   __|  |  . `  |    |  |  |  | |      /     |  | |   __|  |  . `  |     |  |      /  /_\  \    |  |     |  | |  |  |  | |  . `  | 
+ .----)   |   |  `----.|  |\  \----.|  |____ |  |____ |  |\   |    |  `--'  | |  |\  \----.|  | |  |____ |  |\   |     |  |     /  _____  \   |  |     |  | |  `--'  | |  |\   | 
+ |_______/     \______|| _| `._____||_______||_______||__| \__|     \______/  | _| `._____||__| |_______||__| \__|     |__|    /__/     \__\  |__|     |__|  \______/  |__| \__| 
+                                                                                                                                                                                 
+ 
+*/
+@media (orientation: landscape) {
+    .callout-container {
+        background: url("../img/main_horizontal.png") no-repeat top center fixed;
+        background-size: contain;
+    }
+}
+
+@media (orientation: portrait) {
+    .callout-container {
+        background: url("../img/main_vertical.png") no-repeat top center fixed;
+        background-size: contain;
+    }
+}
+
 /*  ___   ___      _______.    _______   _______  _______    ___      __    __   __      .___________.
     \  \ /  /     /       |   |       \ |   ____||   ____|  /   \    |  |  |  | |  |     |           |
      \  V  /     |   (----`   |  .--.  ||  |__   |  |__    /  ^  \   |  |  |  | |  |     `---|  |----`
@@ -5,9 +30,10 @@
      /  .  \  .----)   |      |  '--'  ||  |____ |  |    /  _____  \ |  `--'  | |  `----.    |  |     
     /__/ \__\ |_______/       |_______/ |_______||__|   /__/     \__\ \______/  |_______|    |__|     
 */
-  /* Extra small devices (portrait phones, less than 576px)
+
+/* Extra small devices (portrait phones, less than 576px)
  No media query since this is the default in Bootstrap */
- 
+ /* @media (max-width: 576px) {} */
 /*    _______..___  ___. 
      /       ||   \/   | 
     |   (----`|  \  /  | 
@@ -15,10 +41,18 @@
  .----)   |   |  |  |  | 
  |_______/    |__|  |__| 
  */
- /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .callout-container {
+        background-position-y: 30px;
+   
     
- }
+    }
+
+}
+
 /*___  ___.  _______  
  |   \/   | |       \ 
  |  \  /  | |  .--.  |
@@ -26,19 +60,23 @@
  |  |  |  | |  '--'  |
  |__|  |__| |_______/ 
 */
+
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    
-    .navbar  {
+
+@media (min-width: 768px) {
+    .navbar {
         /* position: fixed;
         top: 0;
         right: auto;
         left: 0;
         z-index: 1030; */
-        width: 34%;
-    } 
+        width: 200px;
+    }
+    .content-container {
+        margin-left: 200px;
+    }
+}
 
- }
 /*__        _______ 
  |  |      /  _____|
  |  |     |  |  __  
@@ -46,12 +84,41 @@
  |  `----.|  |__| | 
  |_______| \______| 
 */
+
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    .navbar  {
-height: 100vh;
+
+@media (min-width: 992px) {
+    .navbar {
+        height: 100vh;
+        width: 220px;
     }
- }
+    .content-container {
+        margin: 0 20px 0 240px;
+        max-width: 1024px;
+    }
+    
+    section {
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (orientation: landscape) {
+    .wide-fix-center {
+        max-width: 1240px;
+        text-align: center;
+        margin-left: 500px;
+        float: left;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .callout-container {
+         background-position-x: 200px;
+     }
+    
+}
+
 /*  ___   ___  __      
     \  \ /  / |  |     
      \  V  /  |  |     
@@ -59,7 +126,12 @@ height: 100vh;
      /  .  \  |  `----.
     /__/ \__\ |_______|
 */
+
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    
- }
+
+@media (min-width: 1200px) {
+
+    .callout-container {
+       background-position-x: 200px;
+    }
+}
