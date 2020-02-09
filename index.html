@@ -25,12 +25,15 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 
     <title>Radu Cojan | Full Stack Web Developer</title>
+    <script>
 
+
+    </script>
 </head>
 
-<body data-spy="scroll" data-target="#navbar-main" data-offset="550">
+<body data-spy="scroll" data-target="#navbar-main" data-offset="20">
     <header>
-        <div class="container-fluid pl-0 pr-0">
+        <div class="container-fluid pl-0 pr-0" id="top">
             <nav class="navbar navbar-expand-md flex-md-wrap navbar-dark bg-dark d-md-inline-flex fixed-top"
                 id="navbar-main">
                 <a href="#top">
@@ -69,29 +72,26 @@
 
 
     <main role="main">
-
+        <!-- home -->
         <div class="container-fluid callout-container">
+            <div class="wide-fix-center"></div>
 
-           <div class="wide-fix-center">
-                    <!-- home -->
-                    <section class="callout jumbotron"  >
-                        <h1 class="jumbotron-header">Hello</h1>
-                        <hr class="block-divider block-divider--orange">
-                        <p class="lead">Full Stack</p>
-                    </section>
-                    <!-- End Home -->
-              </div>  
+            <div class="callout text-center">
+                <h1>Hello</h1>
+            </div>
+            <div class="lead">I'm Radu Cojan<br>
+                Full Stack Developer</div>
 
         </div>
-
+        <!-- End Home -->
         <!-- <div class="row justify-content-end mr-0"> -->
-            <div class="content-container">
+        <div class="content-container">
             <div class="col-12 pr-0 pl-0">
                 <!-- About -->
                 <section id="about">
                     <div class="inner">
                         <h2>About</h2>
-                        <hr>
+                        <div class="title-divider"></div>
                         <div class="about-con">
                             <ul>
                                 <li>Name: Radu-Andrei Cojan</li>
@@ -112,108 +112,144 @@
                                 Passionate about creating a positive user experience, I enjoy working with and
                                 adapting to
                                 technologies as they develop. </p>
-                            <a href="#" class="button">Download resume as PDF format</a>
+                            <button class="btn btn-outline-success btn-block mt-5">Download resume as PDF
+                                format</button>
                         </div>
                     </div>
                 </section>
                 <!-- End About -->
 
-
-
-
                 <!-- Skills -->
-                <!-- <section id="skills">
+                <section id="skills">
                     <div class="inner">
                         <h2>Skills</h2>
-                        <hr />
-                        <h3>Skills Section</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus
-                            aliquet1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />
-                            <div class="rating-box">
-                                <span class="rating-star full-star" ><span>5 Stars</span></span>
+                        <div class="title-divider"></div>
+                        <p class="ml-2">Some of my skills</p>
+
+                        <div class="row mx-auto">
+                            <div class="col-12 col-sm-6 col-lg-4 rating-box">
+                                <span class="star-hover">html - 4.5 Stars</span>
+                                <h3 class="skill-title">html</h3>
                                 <span class="rating-star full-star fas"></span>
-                                <span class="rating-star full-star"></span>
-                                <span class="rating-star full-star"></span>
-                                <span class="rating-star full-star"></span>
+                                <span class="rating-star full-star fas"></span>
+                                <span class="rating-star full-star fas"></span>
+                                <span class="rating-star full-star fas"></span>
+                                <span class="rating-star half-star fas"></span>
                             </div>
-                        
-                            <div class="rating-box">
-                                <span class="rating-star full-star"></span>
-                                <span class="rating-star full-star"></span>
-                                <span class="rating-star full-star"></span>
-                                <span class="rating-star half-star"></span>
-                                <span class="rating-star empty-star"></span>
-                            </div>
-                        
-                            <div class="rating-box">
-                                <span class="rating-star full-star"></span>
-                                <span class="rating-star full-star"></span>
-                                <span class="rating-star empty-star"></span>
-                                <span class="rating-star empty-star"></span>
+
+                            <div class="col-12 col-sm-6 col-lg-4 rating-box">
+                                <span class="star-hover">CSS - 4 Stars</span>
+                                <h3 class="skill-title">css</h3>
+                                <span class="rating-star full-star fas"></span>
+                                <span class="rating-star full-star fas"></span>
+                                <span class="rating-star full-star fas"></span>
+                                <span class="rating-star full-star fas"></span>
                                 <span class="rating-star empty-star"></span>
                             </div>
-                        
-                            <div class="rating-box">
+
+                            <div class="col-12 col-sm-6 col-lg-4 rating-box">
+                                <span class="star-hover">Javascript - 3.5 Stars</span>
+                                <h3 class="skill-title">js</h3>
+                                <span class="rating-star full-star fas"></span>
+                                <span class="rating-star full-star fas"></span>
+                                <span class="rating-star full-star fas"></span>
+                                <span class="rating-star half-star fas"></span>
+                                <span class="rating-star empty-star"></span>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-4 rating-box">
+                                <span class="star-hover">PYTHON - 3 Stars</span>
+                                <h3 class="skill-title">py</h3>
+                                <span class="rating-star full-star fas"></span>
+                                <span class="rating-star full-star fas"></span>
+                                <span class="rating-star full-star fas"></span>
                                 <span class="rating-star empty-star"></span>
                                 <span class="rating-star empty-star"></span>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-4 rating-box">
+                                <span class="star-hover">SQL - 2.5 Stars</span>
+                                <h3 class="skill-title">SQL</h3>
+                                <span class="rating-star full-star fas"></span>
+                                <span class="rating-star full-star fas"></span>
+                                <span class="rating-star half-star fas"></span>
+                                <span class="rating-star empty-star"></span>
+                                <span class="rating-star empty-star"></span>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-4 rating-box">
+                                <span class="star-hover">Django - 2 Stars</span>
+                                <h3 class="skill-title">Django</h3>
+                                <span class="rating-star full-star fas"></span>
+                                <span class="rating-star full-star fas"></span>
                                 <span class="rating-star empty-star"></span>
                                 <span class="rating-star empty-star"></span>
                                 <span class="rating-star empty-star"></span>
                             </div>
-                            <br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />
-                            neque a nibh mollis blandit. Quisque varius eros ac purus dignissim.</p>
+
+
+                        </div>
+
+
+
                     </div>
-                </section> -->
+                </section>
                 <!-- End Skills -->
 
                 <!-- Portofolio -->
                 <section id="portofolio">
                     <div class="inner">
                         <h2>Portofolio</h2>
-                        <hr />
-                        <h3>Portofolio Section</h3>
-                        <p>Portofolio text</p>
+                        <div class="title-divider"></div>
+                        <!-- <p class="ml-2">My latest projects:</p> -->
+                        <h3>My latest projects:</h3>
+                        <div class="row row-cols-2 row-cols-xl-4">
+                            <div class="col mb-4">
 
+                                <div class="card h-100">
+                                    <a class="stretched-link" href="aa0" target="_blank">
+                                        <img src="assets/img/portofolio/gal_1.png" alt="LoveRunning Project">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Love Running</h5>
+                                        <p class="card-text">HTML / CSS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card h-100">
+                                    <a class="stretched-link" href="aa0" target="_blank">
+                                        <img src="assets/img/portofolio/gal_2.png" alt="LoveRunning Project">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Whiskey Store</h5>
+                                        <p class="card-text">HTML / CSS / Bootsrap </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card h-100">
+                                    <a class="stretched-link" href="aa0" target="_blank">
+                                        <img src="assets/img/portofolio/gal_3.png" alt="LoveRunning Project">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Personal Resume</h5>
+                                        <p class="card-text">HTML / CSS / Bootsrap</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card h-100">
 
-                        <!-- <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
-                            <div class="col mb-4">
-                               
-                              <div class="card">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <img src="assets/img/portofolio/gal_4.png" alt="LoveRunning Project">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Next Project</h5>
+                                        <p class="card-text">Watch this space for my next projects!</p>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                            <div class="col mb-4">
-                              <div class="card">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col mb-4">
-                              <div class="card">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col mb-4">
-                              <div class="card">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div> -->
+                        </div>
 
                     </div>
                 </section>
@@ -241,11 +277,11 @@
                                     else.</small>
                             </div>
                             <div class="form-group">
-                                <textarea name="message" id="message" class="form-control" cols="45" rows="5"
+                                <textarea name="message" id="message" class="form-control" cols="45" rows="10"
                                     placeholder="Your Message..." required></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-secondary">Submit</button>
+                            <button type="submit" class="btn btn-outline-success">Submit</button>
                         </form>
                     </div>
                 </section>
@@ -260,7 +296,7 @@
 
         <!-- 
             TEST SIzes
-            1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />
+<br>1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />
         <h2>
             <span class="badge badge-primary d-inline-block d-sm-none">Bootstrap - 0-&gt;576px - XS</span>
             <span class="badge badge-secondary d-none d-sm-inline-block d-md-none">Bootstrap - 576-&gt;768px - SM</span>
@@ -341,7 +377,12 @@
                 $('.navbar-collapse').collapse('hide');
             }
         });
-    </script>
+
+        $(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
+
+        </script>
 
 </body>
 

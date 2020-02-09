@@ -9,16 +9,27 @@
                                                                                                                                                                                  
  
 */
+
 @media (orientation: landscape) {
     .callout-container {
         background: url("../img/main_horizontal.png") no-repeat top center fixed;
         background-size: contain;
     }
+    .callout h1 {
+        padding-top: 105px;
+        /* margin-top: 105px; */
+    }
+    .callout-container {
+        /* top: 105px; */
+    }
+    .lead {
+        margin: 20px -74px;
+    }
 }
 
 @media (orientation: portrait) {
     .callout-container {
-        background: url("../img/main_vertical.png") no-repeat top center fixed;
+        background: url("../img/main_vertical.png") no-repeat center center fixed;
         background-size: contain;
     }
 }
@@ -33,7 +44,15 @@
 
 /* Extra small devices (portrait phones, less than 576px)
  No media query since this is the default in Bootstrap */
- /* @media (max-width: 576px) {} */
+
+@media (max-width: 576px) {
+    @media (orientation: landscape) {
+        .callout-container {
+            background-position-y: 10px;
+        }
+    }
+}
+
 /*    _______..___  ___. 
      /       ||   \/   | 
     |   (----`|  \  /  | 
@@ -45,12 +64,9 @@
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
-    .callout-container {
-        background-position-y: 30px;
-   
-    
-    }
-
+    /* .callout-container {
+        background-position-y: 130px; 
+     } */
 }
 
 /*___  ___.  _______  
@@ -65,11 +81,6 @@
 
 @media (min-width: 768px) {
     .navbar {
-        /* position: fixed;
-        top: 0;
-        right: auto;
-        left: 0;
-        z-index: 1030; */
         width: 200px;
     }
     .content-container {
@@ -96,27 +107,48 @@
         margin: 0 20px 0 240px;
         max-width: 1024px;
     }
-    
     section {
         border-radius: 10px;
         margin-bottom: 20px;
     }
+    .callout-container {
+        background-position-x: 100px;
+    }
+    .callout h1 {
+        margin-left: 200px;
+    }
+    .lead {
+        margin: -37px -178px;
+    }
+    @media (orientation: landscape) {
+        .callout h1 {
+            padding-top: 220px;
+            margin-left: 0px;
+        }
+        .callout-container {
+            background-position: center center;
+        }
+        .lead {
+            margin: 77px -69px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
 
-@media screen and (min-width: 1025px) and (orientation: landscape) {
-    .wide-fix-center {
-        max-width: 1240px;
-        text-align: center;
-        margin-left: 500px;
-        float: left;
-        position: absolute;
-        left: 0;
-        right: 0;
+@media screen and (min-width: 993px) and (max-width: 1024px) and (orientation: landscape) {
+    /* .callout-container {
+        background-position-x: 200px;
+        padding-left: 200px;
+    } */
+    .lead {
+        margin: 49px -69px;
     }
-    .callout-container {
-         background-position-x: 200px;
-     }
-    
+    .callout h1 {
+        margin-left: 0px;
+        margin-top: 160px;
+    }
 }
 
 /*  ___   ___  __      
@@ -129,9 +161,12 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
+     .callout-container {
+        background-position-x: 200px; 
+    } 
 
-    .callout-container {
-       background-position-x: 200px;
-    }
-}
+    
+} 
+
+*/
