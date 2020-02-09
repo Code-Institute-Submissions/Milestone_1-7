@@ -20,6 +20,7 @@ section {
   background-color: #000;
   padding-top: 40px;
   border-bottom: 2px solid #18212a;
+  padding-left: 20px;
 }
 
 h2 {
@@ -42,6 +43,24 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 30px;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  color: #818181;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 30px;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  color: #818181;
+}
+
 a {
   color: #fff;
 }
@@ -49,6 +68,17 @@ a {
 a:hover {
   color: #818181;
   text-decoration: none;
+}
+
+a.totop-link {
+  bottom: 7px;
+  left: 7px;
+  cursor: pointer;
+  font-size: 26px;
+  margin: 0;
+  color: #7dba5c;
+  position: fixed;
+  z-index: 5;
 }
 
 /*
@@ -59,7 +89,9 @@ a:hover {
  |  |  |  | |  |____ |  |\   | |  `--'  | 
  |__|  |__| |_______||__| \__|  \______/  
  */
-
+nav a {
+  margin-bottom: auto;
+}
 nav li a {
   padding: 0px;
   margin: 0 30px;
@@ -89,6 +121,38 @@ ul.navbar-nav li:last-child a {
   padding-top: 20px;
 }
 
+
+
+/* social */
+
+.social {
+  padding: 30px;
+  position: absolute;
+  bottom: 10px;
+}
+.social a {
+  font-size: 20px;
+  transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
+}
+.social a:hover {
+  color: #fff;
+}
+.social .facebook {
+  color: #5a7eca
+}
+.social .linkedin {
+  color: #0077b5;
+  margin: 0 26px 0 30px
+}
+.social .github {
+  color: #24292e;
+}
+
+
+
 /*
       ___      .______     ______    __    __  .___________.
      /   \     |   _  \   /  __  \  |  |  |  | |           |
@@ -115,6 +179,48 @@ ul.navbar-nav li:last-child a {
 
 .about-con ul li address {
   margin-bottom: 0;
+}
+
+.education-details {
+  /* height: 85px; */
+}
+
+.education-details span {
+  font-size: 16px;
+}
+
+.full-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #333333;
+  margin: 30px 0 0 0;
+  clear: both;
+}
+
+.education-details .icon-block i {
+  font-size: 60px;
+  color: #7dba5c;
+  margin: 8px 0 0;
+}
+
+.education-details:hover i {
+  font-size: 73px;
+  color: #818181;
+}
+
+.education-details:hover .col-3 {
+  width: 29%;
+  transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
+}
+
+.education-details i {
+  transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
 }
 
 /*
@@ -234,18 +340,14 @@ ul.navbar-nav li:last-child a {
   \______/   \______/  |__|  |__| |______/   \______/      |__|     | _| `._____| \______/  |__| \__|    
  */
 
-
-
 .callout h1 {
-  color:#18212a;
+  color: #18212a;
   font-weight: bold;
-  
   /* Outline */
   text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 1.75517px 0.958851px 0px, rgb(255, 255, 255) 1.0806px 1.68294px 0px, rgb(255, 255, 255) 0.141474px 1.99499px 0px, rgb(255, 255, 255) -0.832294px 1.81859px 0px, rgb(255, 255, 255) -1.60229px 1.19694px 0px, rgb(255, 255, 255) -1.97998px 0.28224px 0px, rgb(255, 255, 255) -1.87291px -0.701566px 0px, rgb(255, 255, 255) -1.30729px -1.5136px 0px, rgb(255, 255, 255) -0.421592px -1.95506px 0px, rgb(255, 255, 255) 0.567324px -1.91785px 0px, rgb(255, 255, 255) 1.41734px -1.41108px 0px, rgb(255, 255, 255) 1.92034px -0.558831px 0px;
   animation-name: moveDown;
   animation-duration: 4s;
   animation-fill-mode: forwards;
-
   margin: 0px;
 }
 
@@ -256,9 +358,9 @@ ul.navbar-nav li:last-child a {
   20% {
     margin-top: 0;
   }
-   80% {
+  80% {
     margin-top: 0;
-  } 
+  }
   100% {
     /* margin-top: 110vh; */
     opacity: 0;
@@ -266,35 +368,35 @@ ul.navbar-nav li:last-child a {
   }
 }
 
- .lead {
+.lead {
   color: #818181;
   margin: -37px -74px;
   border-bottom: 1px solid #7a7a7a;
   border-top: 1px solid #7a7a7a;
   padding: 10px 5px;
   letter-spacing: 1px;
-    font-size: 11px;
+  font-size: 11px;
   font-weight: 700;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   text-align: center;
-
   top: 50vh;
   right: 50vw;
-
   /* @keyframes duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name */
   animation: 5s ease 0s normal forwards 1 fadein;
-
-  
 }
 
-@keyframes fadein{
-  0% { opacity:0; }
-  66% { opacity:0; }
-  100% { opacity:1; }
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-
 
 .jumbotron small {
   font-size: 60%;
@@ -338,39 +440,17 @@ ul.navbar-nav li:last-child a {
 */
 
 footer {
-  background-color: #525252;
-  color: #fafafa;
-  min-height: 70px;
+  min-height: 50px;
   margin: 0;
 }
 
-.social-links {
-  padding-bottom: 10px;
+footer .social {
+  position: unset;
+  padding: 18px 0px 0px 0px;
 }
 
-.social-links li a i {
-  width: 32px;
-  height: 32px;
-  padding: 12px 0;
-  border-radius: 50%;
-  font-size: 13px;
-  line-height: 7px;
-  text-align: center;
-  color: #fafafa;
-  background: #8f8f8f;
-  transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
-}
 
-.social-links li a i:hover {
-  background: #e84610;
-}
 
-#footer-details {
-  padding: 20px 20px 0px 20px;
-}
 
 /*
       _______. __  ___  __   __       __          _______.        ___      .__   __.  _______          _______.___________.    ___      .______          _______.

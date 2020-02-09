@@ -82,6 +82,7 @@
 @media (min-width: 768px) {
     .navbar {
         width: 200px;
+        padding-bottom: 90px;
     }
     .content-container {
         margin-left: 200px;
@@ -129,10 +130,15 @@
             background-position: center center;
         }
         .lead {
-            margin: 77px -69px;
+             margin: 77px -69px; 
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 2.5vw;
+            line-height: normal;
+            position: unset;
+             margin-top: 361px;  
+            margin-left: -148px;
         }
     }
 }
