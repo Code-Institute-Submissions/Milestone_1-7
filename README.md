@@ -24,3 +24,7 @@ https://favicon.io/favicon-generator/?t=RC&ff=Archivo+Black&fs=80&fc=%23FFFFFF&b
 
 
 https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click
+
+
+
+https://pixabay.com/vectors/development-web-design-graphic-4536630
