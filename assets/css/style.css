@@ -1,3 +1,9 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) 
+W3C CSS Validator results for style.css (CSS level 3 + SVG)
+Congratulations! No Error Found.
+This document validates as CSS level 3 + SVG !
+*/
+
 /*
  .___  ___.      ___       __  .__   __.         _______.___________.____    ____  __       _______     _______.
  |   \/   |     /   \     |  | |  \ |  |        /       |           |\   \  /   / |  |     |   ____|   /       |
@@ -89,9 +95,11 @@ a.totop-link {
  |  |  |  | |  |____ |  |\   | |  `--'  | 
  |__|  |__| |_______||__| \__|  \______/  
  */
+
 nav a {
   margin-bottom: auto;
 }
+
 nav li a {
   padding: 0px;
   margin: 0 30px;
@@ -121,8 +129,6 @@ ul.navbar-nav li:last-child a {
   padding-top: 20px;
 }
 
-
-
 /* social */
 
 .social {
@@ -130,6 +136,7 @@ ul.navbar-nav li:last-child a {
   position: absolute;
   bottom: 10px;
 }
+
 .social a {
   font-size: 20px;
   transition-duration: .2s;
@@ -137,21 +144,23 @@ ul.navbar-nav li:last-child a {
   -webkit-transition-duration: .2s;
   -o-transition-duration: .2s;
 }
+
 .social a:hover {
   color: #fff;
 }
+
 .social .facebook {
   color: #5a7eca
 }
+
 .social .linkedin {
   color: #0077b5;
 }
+
 .social .github {
   color: #7c848b;
   margin: 0 26px 0 30px
 }
-
-
 
 /*
       ___      .______     ______    __    __  .___________.
@@ -179,10 +188,6 @@ ul.navbar-nav li:last-child a {
 
 .about-con ul li address {
   margin-bottom: 0;
-}
-
-.education-details {
-  /* height: 85px; */
 }
 
 .education-details span {
@@ -224,6 +229,32 @@ ul.navbar-nav li:last-child a {
 }
 
 /*
+ .______     ______   .______     .___________.  ______    _______   ______    __       __    ______   
+ |   _  \   /  __  \  |   _  \    |           | /  __  \  |   ____| /  __  \  |  |     |  |  /  __  \  
+ |  |_)  | |  |  |  | |  |_)  |   `---|  |----`|  |  |  | |  |__   |  |  |  | |  |     |  | |  |  |  | 
+ |   ___/  |  |  |  | |      /        |  |     |  |  |  | |   __|  |  |  |  | |  |     |  | |  |  |  | 
+ |  |      |  `--'  | |  |\  \----.   |  |     |  `--'  | |  |     |  `--'  | |  `----.|  | |  `--'  | 
+ | _|       \______/  | _| `._____|   |__|      \______/  |__|      \______/  |_______||__|  \______/  
+*/
+
+.card img {
+  width: 100%;
+}
+
+.card {
+  border-radius: 0;
+}
+
+.card {
+  box-shadow: 0 1px 3px rgba(125, 186, 92, 0), 0 1px 2px rgba(125, 186, 92, 0);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(125, 186, 92, 0.75), 0 10px 10px rgba(125, 186, 92, 0.52);
+}
+
+/*
   _______   ______   .______      .___  ___. 
  |   ____| /  __  \  |   _  \     |   \/   | 
  |  |__   |  |  |  | |  |_)  |    |  \  /  | 
@@ -239,9 +270,7 @@ ul.navbar-nav li:last-child a {
   line-height: normal;
   font-size: 15px;
   -webkit-transition: background-color 0.3s ease-in-out;
-  -moz-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
-  -ms-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -251,6 +280,7 @@ ul.navbar-nav li:last-child a {
   background-color: #18212a;
   color: #818181;
   border: 1px solid #7dba5c;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -316,21 +346,6 @@ ul.navbar-nav li:last-child a {
   color: #ffffff;
 }
 
-#cover-text {
-  font-size: 130%;
-  font-family: Oswald;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  width: 300px;
-  height: 200px;
-  padding-top: 40px;
-  padding-left: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  top: 220px;
-  left: 120px;
-  position: absolute;
-}
-
 /*
         __   __    __  .___  ___. .______     ______   .___________..______        ______   .__   __.    
        |  | |  |  |  | |   \/   | |   _  \   /  __  \  |           ||   _  \      /  __  \  |  \ |  |    
@@ -345,10 +360,29 @@ ul.navbar-nav li:last-child a {
   font-weight: bold;
   /* Outline */
   text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 1.75517px 0.958851px 0px, rgb(255, 255, 255) 1.0806px 1.68294px 0px, rgb(255, 255, 255) 0.141474px 1.99499px 0px, rgb(255, 255, 255) -0.832294px 1.81859px 0px, rgb(255, 255, 255) -1.60229px 1.19694px 0px, rgb(255, 255, 255) -1.97998px 0.28224px 0px, rgb(255, 255, 255) -1.87291px -0.701566px 0px, rgb(255, 255, 255) -1.30729px -1.5136px 0px, rgb(255, 255, 255) -0.421592px -1.95506px 0px, rgb(255, 255, 255) 0.567324px -1.91785px 0px, rgb(255, 255, 255) 1.41734px -1.41108px 0px, rgb(255, 255, 255) 1.92034px -0.558831px 0px;
+  -webkit-animation-name: moveDown;
   animation-name: moveDown;
+  -webkit-animation-duration: 4s;
   animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   margin: 0px;
+}
+
+@-webkit-keyframes moveDown {
+  0% {
+    margin-top: -55vh;
+  }
+  20% {
+    margin-top: 0;
+  }
+  80% {
+    margin-top: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 
 @keyframes moveDown {
@@ -362,7 +396,6 @@ ul.navbar-nav li:last-child a {
     margin-top: 0;
   }
   100% {
-    /* margin-top: 110vh; */
     opacity: 0;
     display: none;
   }
@@ -383,7 +416,20 @@ ul.navbar-nav li:last-child a {
   top: 50vh;
   right: 50vw;
   /* @keyframes duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+  -webkit-animation: 5s ease 0s normal forwards 1 fadein;
   animation: 5s ease 0s normal forwards 1 fadein;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
@@ -406,14 +452,16 @@ ul.navbar-nav li:last-child a {
 
 .callout-container {
   height: 100vh;
-  /* background: url('../img/web-development-framework.jpg') no-repeat top center fixed; */
   background: #18212a;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   position: relative;
 }
@@ -449,9 +497,6 @@ footer .social {
   padding: 18px 0px 0px 0px;
 }
 
-
-
-
 /*
       _______. __  ___  __   __       __          _______.        ___      .__   __.  _______          _______.___________.    ___      .______          _______.
      /       ||  |/  / |  | |  |     |  |        /       |       /   \     |  \ |  | |       \        /       |           |   /   \     |   _  \        /       |
@@ -484,7 +529,6 @@ footer .social {
   display: block;
   float: left;
   line-height: 24px;
-  /* text-shadow: 0px 0px 5px rgba(125, 186, 92, .5); */
 }
 
 .full-star:before {
@@ -543,21 +587,4 @@ footer .social {
 
 .rating-box:hover .star-hover {
   opacity: 1
-}
-
-/*
- .______     ______   .______     .___________.  ______    _______   ______    __       __    ______   
- |   _  \   /  __  \  |   _  \    |           | /  __  \  |   ____| /  __  \  |  |     |  |  /  __  \  
- |  |_)  | |  |  |  | |  |_)  |   `---|  |----`|  |  |  | |  |__   |  |  |  | |  |     |  | |  |  |  | 
- |   ___/  |  |  |  | |      /        |  |     |  |  |  | |   __|  |  |  |  | |  |     |  | |  |  |  | 
- |  |      |  `--'  | |  |\  \----.   |  |     |  `--'  | |  |     |  `--'  | |  `----.|  | |  `--'  | 
- | _|       \______/  | _| `._____|   |__|      \______/  |__|      \______/  |_______||__|  \______/  
-*/
-
-.card img {
-  width: 100%;
-}
-
-.card {
-  border-radius: 0;
 }

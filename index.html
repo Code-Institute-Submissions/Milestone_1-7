@@ -25,15 +25,12 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 
     <title>Radu Cojan | Full Stack Web Developer</title>
-    <script>
-
-
-    </script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-main" data-offset="20">
     <header>
         <div class="container-fluid pl-0 pr-0" id="top">
+            <!--nav start-->
             <nav class="navbar navbar-expand-md flex-md-wrap navbar-dark bg-dark d-md-inline-flex fixed-top"
                 id="navbar-main">
                 <a href="#top">
@@ -75,9 +72,12 @@
 
                 </div>
             </nav>
+            <!--end nav-->
         </div>
     </header>
 
+    <!-- W3 validator: Warning: The main role is unnecessary for element main.
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main have this as an example -->
 
     <main role="main">
         <a href="#top" class="totop-link d-none d-block d-md-none"><i class="fas fa-caret-square-up"></i></a>
@@ -102,8 +102,7 @@
                             <ul>
                                 <li>Name: Radu-Andrei Cojan</li>
                                 <li>Email: <a href="mailto:cojanradu@yahoo.com">cojanradu@yahoo.com</a></li>
-                                <li>Phone: <phone>0747 5934233</phone>
-                                </li>
+                                <li>Phone: 0747 5934233</li> <!-- Error from W3 validator for <phone> inside <ul> -->
                                 <li>Date of birth: 11 August 1978</li>
                                 <li>
                                     <address>5 Brickle Wood Av. Poringland, Norwich, NR147TS, UK</address>
@@ -118,9 +117,8 @@
                                 Passionate about creating a positive user experience, I enjoy working with and
                                 adapting to
                                 technologies as they develop. </p>
-                            <button class="btn btn-outline-success btn-block mt-5">Download resume as PDF
-                                format</button>
-
+                            <a class="btn btn-outline-success btn-block mt-5" href="assets/doc/Radu_Andrei_Cojan_CV.pdf"
+                                target="_blank">Download resume as PDF format</a>
                             <h3>My Education</h3>
                             <div class="full-divider"></div>
                             <div class="education-details">
@@ -224,7 +222,6 @@
                     <div class="inner">
                         <h2>Portofolio</h2>
                         <div class="title-divider"></div>
-                        <!-- <p class="ml-2">My latest projects:</p> -->
                         <h3>My latest projects:</h3>
                         <div class="row row-cols-2 row-cols-xl-4">
                             <div class="col mb-4">
@@ -337,12 +334,10 @@
                 $('.navbar-collapse').collapse('hide');
             }
         });
-
         // Testing purpose only
         //$(window).on('beforeunload', function () {
         //     $(window).scrollTop(0);
         // });
-
     </script>
 </body>
 
