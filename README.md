@@ -25,8 +25,13 @@ I would like the page scroll to be horizontal on smaller devices instead of vert
 
 
 ### Testing
+<<<<<<< HEAD
 | Horizontal| Vertical|Device - size|
-| ----------- | ----------- | --------- |
+| ----------- | ----------- | ----------- |
+=======
+| Horizontal| Vertical|Device / size|
+| ----------- | ----------- | ----------- |
+>>>>>>> readme
 | <img src="https://github.com/CojanRadu/Milestone_1/blob/master/assets/img/test_images/01-H.png" alt="test" width="200"/>     | <img src="https://github.com/CojanRadu/Milestone_1/blob/master/assets/img/test_images/01-V.png" alt="test" height="200"/>|Galaxy S5 - 640x360|
 | Paragraph   | Text        |b|
 
